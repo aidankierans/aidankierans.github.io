@@ -13,92 +13,81 @@
             padding: 20px;
             color: #333;
         }
-        
+
         .header {
             margin-bottom: 2rem;
         }
-        
+
         .profile-section {
             display: flex;
             gap: 2rem;
             align-items: flex-start;
             margin-bottom: 2rem;
         }
-        
+
         .profile-image {
             width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 4px;
         }
-        
+
         h1 {
             color: #2c3e50;
             margin: 0;
         }
-        
+
         h2 {
             color: #34495e;
             border-bottom: 2px solid #eee;
             padding-bottom: 0.5rem;
             margin-top: 2rem;
         }
-        
+
         .contact-info {
             margin-top: 1rem;
         }
-        
+
         .publication {
             margin-bottom: 1.5rem;
             padding-left: 1rem;
             border-left: 3px solid #eee;
         }
-        
+
         .publication-title {
             font-weight: bold;
         }
-        
+
         a {
             color: #3498db;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         .navigation {
             margin-bottom: 2rem;
         }
-        
+
         .navigation a {
             margin-right: 1rem;
         }
-        
-        .award {
-            margin-bottom: 1rem;
+
+        ul.highlights {
+            padding-left: 1.2rem;
         }
-        
-        .experience {
-            margin-bottom: 1.5rem;
+
+        ul.highlights li {
+            margin-bottom: 0.5rem;
         }
-        
-        .conference {
-            margin-bottom: 1rem;
-            padding-left: 1rem;
-        }
-        
-        .project {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 3px solid #eee;
-        }
-        
+
         @media (max-width: 600px) {
             .profile-section {
                 flex-direction: column;
             }
-            
+
             .profile-image {
                 width: 150px;
                 height: 150px;
@@ -109,15 +98,10 @@
 <body>
     <div class="navigation">
         <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
-        <a href="#conferences">Conferences</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#teaching">Teaching</a>
+        <a href="#experience">Experience</a>
+        <a href="#recognition">Recognition</a>
         <a href="#media">Media</a>
-        <a href="#contact">Contact</a>
     </div>
 
     <div class="header">
@@ -127,10 +111,10 @@
                 <h1>Aidan Kierans</h1>
                 <p>Ph.D. Student in Computer Science and Engineering<br>
                 University of Connecticut</p>
-                
+
                 <div class="contact-info">
-                    <p>📧 aidan.kierans [at] uconn.edu<br>
-                    <a href="https://www.linkedin.com/in/aidan-kierans/">LinkedIn</a> · <a href="https://aidankierans.github.io/">Website</a></p>
+                    <p>aidan.kierans [at] uconn.edu<br>
+                    <a href="https://www.linkedin.com/in/aidan-kierans/">LinkedIn</a> · <a href="https://drive.google.com/file/d/1d3VEzaYD7UUOeYLtzwj8KmfK-rUK9pvA/view?usp=sharing">CV</a></p>
                 </div>
             </div>
         </div>
@@ -138,207 +122,93 @@
 
     <section id="about">
         <h2>About</h2>
-        <p>I am a Ph.D. student in Computer Science and Engineering at the University of Connecticut, focusing on AI alignment and technical governance. My research has been recognized with awards from workshops at NeurIPS and ICLP, and I have published at AAAI on quantifying misalignment.</p>
-        
-        <p>I am advised by Prof. Shiri Dori-Hacohen in the <a href="https://infothreats.cse.uconn.edu/">Reducing Information Ecosystem Threats (RIET) Lab</a>. I founded <a href="https://www.beacon-ai.club/">Beneficial and Ethical AI at UConn (BEACON)</a>, which has grown to serve over 30 students across six concurrent fellowship cohorts with over 80% retention.</p>
-        
-        <p>My work spans technical AI safety research, policy development, and risk assessment. I contribute to frontier AI safety through the OpenAI Red Teaming Network, where I have identified vulnerabilities in early-stage computer-using agent systems. Last year I led a four-person organizing team for the Machine Ethics and Reasoning (MERe) Workshop, an interdisciplinary virtual workshop that attracted 75+ applicants from philosophy and computer science.</p>
+        <p>I am a Ph.D. student at the University of Connecticut (expected 2027), advised by Prof. Shiri Dori-Hacohen in the <a href="https://infothreats.cse.uconn.edu/">Reducing Information Ecosystem Threats (RIET) Lab</a>. My research focuses on what it takes for AI systems to reason well about moral issues.</p>
+
+        <p>My earlier work on quantifying misalignment (AAAI-25) addressed preference divergence between agents. My recent position papers argue that alignment requires more than matching preferences—AI systems also need to follow appropriate reasoning norms. I'm now building knowledge graph infrastructure for philosophical argumentation to support this broader vision of moral reasoning for AI.</p>
+
+        <p>Beyond research, I work on AI safety evaluation and policy. I have contributed to frontier model evaluations through the OpenAI Red Teaming Network and Nemesys Insights, and to governance discussions through the Wilson Center's Pathways to AI Policy program, as a Google Policy Fellow at CDT, and at NIST workshops. I also founded <a href="https://www.beacon-ai.club/">BEACON</a> and led the 2025 Machine Ethics and Reasoning Workshop.</p>
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
+
         <div class="publication">
-            <p class="publication-title">ReNorM: Aligning AI Requires Automating Reasoning Norms</p>
-            <p>Kierans, A.<br>
-            Submitted as a position paper to the 43rd International Conference on Machine Learning (ICML 2026)<br>
+            <p class="publication-title">Position: Aligning AI Requires Automating Reasoning Norms</p>
+            <p><u>Kierans, A.</u>, Ghosh, A., Dori-Hacohen, S.<br>
+            Submitted to ICML 2026<br>
+            [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399451">Preprint</a>]</p>
+        </div>
+
+        <div class="publication">
+            <p class="publication-title">Position: Why LLMs Should Be Reasonably Morally Inconsistent</p>
+            <p>Stenseke, J., <u>Kierans, A.</u>, Pres, I., Hadfield-Menell, D.<br>
+            Submitted to ICML 2026<br>
             [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399451">Preprint</a>]</p>
         </div>
 
         <div class="publication">
             <p class="publication-title">Catastrophic Liability: Managing Systemic Risks in Frontier AI Development</p>
-            <p>Kierans, A., Ritticher, K., Sonsayar, U., Ghosh, A.<br>
-            Presented at Technical AI Safety Conference (TAIS) 2025 and ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO 2025).<br>
+            <p><u>Kierans, A.</u>, Ritticher, K., Sonsayar, U., Ghosh, A.<br>
+            TAIS 2025 and EAAMO 2025<br>
             [<a href="https://arxiv.org/abs/2505.00616">Preprint</a>]</p>
         </div>
 
         <div class="publication">
             <p class="publication-title">Quantifying Misalignment Between Agents: Towards a Sociotechnical Understanding of Alignment</p>
-            <p>Kierans, A., Ghosh, A., Hazan, H., & Dori-Hacohen, S.<br>
-            Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2025), Special Track on AI Alignment<br>
+            <p><u>Kierans, A.</u>, Ghosh, A., Hazan, H., Dori-Hacohen, S.<br>
+            AAAI 2025, Special Track on AI Alignment<br>
             [<a href="https://doi.org/10.1609/aaai.v39i26.34947">Paper</a>] [<a href="https://arxiv.org/abs/2406.04231">Preprint</a>]</p>
         </div>
 
         <div class="publication">
             <p class="publication-title">Benchmarked Ethics: A Roadmap to AI Alignment, Moral Knowledge, and Control</p>
-            <p>Kierans, A.<br>
-            Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society (pp. 964-965)<br>
+            <p><u>Kierans, A.</u><br>
+            AIES 2023<br>
             [<a href="https://doi.org/10.1145/3600211.3604764">Paper</a>]</p>
         </div>
 
         <div class="publication">
             <p class="publication-title">Bootstrap percolation via automated conjecturing</p>
-            <p>Bushaw, N., Conka, B., Gupta, V., Kierans, A., Lafayette, H., Larson, C., McCall, K., Mulyar, A., Sullivan, C., Taylor, S., Wainright, E., Wilson, E., Wu, G., Loeb, S.<br>
-            Ars Mathematica Contemporanea, 23(3), P3-06 (2023)<br>
+            <p>Bushaw, N., Conka, B., Gupta, V., <u>Kierans, A.</u>, Lafayette, H., Larson, C., et al.<br>
+            Ars Mathematica Contemporanea, 2023<br>
             [<a href="https://doi.org/10.26493/1855-3974.2340.a61">Paper</a>]</p>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Ph.D. in Computer Science and Engineering</strong><br>
-                University of Connecticut (Expected May 2027)<br>
-                Research focused on AI alignment and technical governance</li>
-            <li><strong>M.S. in Computer Science and Engineering</strong> (coursework equivalency)<br>
-                University of Connecticut (February 2025)</li>
-            <li><strong>BS in Computer Science, BA in Philosophy</strong> (cum laude)<br>
-                Virginia Commonwealth University (May 2021)<br>
-                BS: Concentration in Data Science | BA: Concentration in Philosophy and Science | Minor in Mathematics</li>
+    <section id="experience">
+        <h2>Selected Experience</h2>
+        <ul class="highlights">
+            <li><strong>Graduate Research Assistant</strong>, UConn RIET Lab (2022–present) — AI alignment research</li>
+            <li><strong>Independent Contractor</strong>, OpenAI Red Teaming Network (2024–present) — Evaluated frontier models including computer-using agents</li>
+            <li><strong>Founder & President</strong>, Beneficial and Ethical AI at UConn (BEACON) (2024–2025) — Student group running AI safety fellowship cohorts</li>
+            <li><strong>Teaching Assistant</strong>, ML Alignment & Theory Scholars (MATS) (2024–2025) — Facilitated AI safety strategy sessions</li>
+            <li><strong>Google Policy Fellow</strong>, Center for Democracy & Technology (2023) — Supported Senate testimony on AI and human rights</li>
+        </ul>
+        <p style="margin-top: 1rem; font-size: 0.95em;">See <a href="https://drive.google.com/file/d/1d3VEzaYD7UUOeYLtzwj8KmfK-rUK9pvA/view?usp=sharing">CV</a> for complete history.</p>
+    </section>
+
+    <section id="recognition">
+        <h2>Selected Recognition</h2>
+        <ul class="highlights">
+            <li><strong>Nemesys Insights Red Teaming Exercise</strong> — Biological Risk Category Winner (2025)</li>
+            <li><strong>Wilson Center Pathways to AI Policy</strong> — Selected Participant (2024–2025)</li>
+            <li><strong>ICLP Safe and Trustworthy AI Workshop</strong> — Best Poster Award (2023)</li>
+            <li><strong>NeurIPS ML Safety Workshop</strong> — AI Risk Analysis Award (2022)</li>
         </ul>
     </section>
 
-    <section id="experience">
-        <h2>Selected Experience</h2>
-
-        <div class="experience">
-            <p><strong>Graduate Teaching Assistant</strong>, ENGR 1195: AI Literacy, University of Connecticut (Aug 2025 – Dec 2025)<br>
-            Supporting large-scale AI literacy course with 500 students across engineering and other disciplines. Analyzing student engagement data and preparing statistical analyses for Provost assessment and course improvement recommendations.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Independent Contractor</strong>, OpenAI Red Teaming Network (Jan 2024 – Present)<br>
-            Participating in red teaming efforts to assess risks and safety profiles of OpenAI models. Red-teamed OpenAI's Computer-Using Agent (CUA) model, "Operator", at early development stages, directly informing risk assessments and System Card outputs.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Graduate Research Assistant</strong>, UConn Reducing Information Ecosystem Threats (RIET) Lab (June 2022 – Present)<br>
-            Published first-author papers on quantifying misalignment, winning the NeurIPS ML Safety Workshop AI Risk Analysis Award (2022), ICLP Best Poster Award (2023), and a top conference publication (AAAI-25 AI Alignment Track). Served on program committees for 6+ workshops and conferences, reviewing 10+ papers. Currently developing knowledge graph infrastructure for philosophy publications to support research on automating moral reasoning.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Founder & President</strong>, Beneficial and Ethical AI at UConn (BEACON) (Feb 2024 – May 2025)<br>
-            Built fellowship program from zero to 30+ students across six concurrent cohorts with 80%+ overall retention and 100% retention after week 2. Scaled organizing team to 6 graduate and undergraduate students. Two undergraduate fellows launched independent research projects; one joined RIET Lab and co-presented at CHAI-24. Secured Open Philanthropy University Group Fellowship funding.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Pathways to AI Policy Selected Participant</strong>, Wilson Center's STIP (Dec 2024 – Apr 2025)<br>
-            Attended Executive AI Labs seminars to observe how U.S. government staff approach AI policy. Trained to engage with and educate policymakers on AI issues.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Teaching Assistant & Contractor</strong>, ML Alignment & Theory Scholars (MATS) (Summer 2024 & 2025)<br>
-            Facilitated weekly "AI Safety Strategy" curriculum for MATS cohorts 6.0 and 8.0, guiding emerging researchers through threat model analysis and research prioritization. Evaluated scholars' research proposals for technical feasibility and alignment with AI safety priorities.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Graduate Entrepreneurship Fellow</strong>, UConn Engineering Entrepreneurship Hub (Aug 2024 – Jul 2025)<br>
-            Conducted 15+ interviews with senior technologists, policy counsel, and government officials to identify gaps in AI safety auditing infrastructure. Synthesized findings into recommendations for transparency standards, reporting requirements, and whistleblower protections in AI development.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Google Policy Fellow</strong>, Center for Democracy & Technology (CDT) (June 2023 – Aug 2023)<br>
-            Ensured technical accuracy of CEO testimony for Senate committee hearing on AI and human rights. Authored briefing materials on AI open-sourcing risks and participated in policy discussions with Meta and Google policy teams. Developed automated data extraction pipeline and created comprehensive "AI Policy Coordination Tracker" database cataloging 150+ CDT policy publications, reducing future data collection time by 90%.</p>
-        </div>
-
-        <div class="experience">
-            <p><strong>Lead Data Scientist</strong>, OpenPrinciples (Jan 2022 – Dec 2022)<br>
-            Redesigned a startup's semantic search pipeline, doubling recommendation accuracy from baseline. Fine-tuned GPT-3 on domain-specific dataset to generate contextually relevant life principle recommendations. Developed cosine similarity-based extraction system to automatically identify high-value quotes from unstructured text.</p>
-        </div>
-    </section>
-
-    <section id="conferences">
-        <h2>Selected Conferences & Presentations</h2>
-        <div class="conference">
-            <p>• <strong>ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization (EAAMO 2025)</strong>: Poster presentation on "Catastrophic Liability: Managing Systemic Risks in Frontier AI Development"</p>
-            <p>• <strong>AI Law and Policy Workshop (Vista Institute)</strong>: Selected participant in Washington, DC workshop on AI governance, cybersecurity, and biosecurity law</p>
-            <p>• <strong>NIST AISIC Workshop on AI Standards Zero Drafts Pilot Project</strong>: Provided technical feedback on early-stage standards for AI evaluation and system documentation</p>
-            <p>• <strong>Congressional Exhibition on Advanced AI</strong>: Led team that designed and presented AI scheming demonstration at Capitol Hill event organized by the Center for AI Policy</p>
-            <p>• <strong>Technical Innovations for AI Policy Conference</strong>: Presented AI scheming demonstration at inaugural Washington, D.C. conference hosted by FAR.AI</p>
-            <p>• <strong>Technical AI Safety Conference 2025 (TAIS)</strong>: Presented poster on "Catastrophic Liability: Managing Systemic Risks in Frontier AI Development"</p>
-            <p>• <strong>AAAI Conference on Artificial Intelligence (AAAI-25)</strong>: Published full paper in Special Track on AI Alignment; reviewed 4 papers as Program Committee member</p>
-            <p>• <strong>Center for Human-Compatible AI Workshop (CHAI 2024)</strong>: Presented first-author poster on "Quantifying Misalignment Between Agents"; co-presented "Reinforcement Learning from Oracle Feedback"</p>
-            <p>• <strong>The Safe and Trustworthy AI Workshop (ICLP 2023)</strong>: Won Best Poster Award for "Quantifying Misalignment Between Agents"; served as Junior Program Committee member</p>
-            <p>• <strong>NeurIPS ML Safety Workshop 2022</strong>: Won AI Risk Analysis Award for "Quantifying Misalignment Between Agents"</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Notable Projects</h2>
-        
-        <div class="project">
-            <p><strong>Moral Knowledge Graph for AI Alignment</strong> (Ongoing)<br>
-            Creating the first large-scale dataset of philosophical arguments for machine understanding of moral reasoning. Building knowledge graph infrastructure to support thesis research on automating reasoning norms.</p>
-        </div>
-        
-        <div class="project">
-            <p><strong>Machine Ethics and Reasoning (MERe) Workshop</strong> (July 2025)<br>
-            Led 4-person organizing team for interdisciplinary virtual workshop attracting 75+ applicants from philosophy and computer science. Delivered plenary talk on "Computational Approaches to Moral Reasoning." Managed parallel OCR processing for 100K PDFs and technical requirements for collaborative annotation interface.</p>
-        </div>
-        
-        <div class="project">
-            <p><strong>Safety Assurance Index (SAI)</strong> (2025)<br>
-            Developed white paper proposing open-source standards for AI safety documentation and verification. Won 3rd place at Apart Research AI Safety & Assurance Startup Hackathon.</p>
-        </div>
-        
-        <div class="project">
-            <p><strong>AI Safety Learning Community</strong> (Jan 2025 – May 2025)<br>
-            Designed and delivered month-long AI safety seminar series for UConn faculty and staff, with support from UConn's Center for Excellence in Teaching and Learning. Seminar "AI Safety Literacy: From Awareness to Action" focused on understanding and addressing AI safety challenges in educational contexts.</p>
-        </div>
-    </section>
-
-    <section id="awards">
-        <h2>Selected Awards and Recognition</h2>
-        <div class="award">
-            <p>• <strong>Nemesys Insights Red Teaming Exercise Biological Risk Category Winner</strong> – Highest-scoring output among 180 participants (2025)</p>
-            <p>• <strong>AI Safety & Assurance Startup Hackathon (Apart Research) 3rd Place Prize</strong> (2025)</p>
-            <p>• <strong>Open Philanthropy University Group Fellowship</strong> for BEACON (2024-2025)</p>
-            <p>• <strong>Selected Participant in the Wilson Center's Pathways to AI Policy program</strong> (2024-2025)</p>
-            <p>• <strong>UConn Engineering Entrepreneurship Hub Graduate Entrepreneurship Fellow</strong> (2024-2025)</p>
-            <p>• <strong>The Safe and Trustworthy AI Workshop (ICLP 2023) Best Poster Award</strong></p>
-            <p>• <strong>UConn Computer Science and Engineering Predoctoral Fellowship</strong> (2023)</p>
-            <p>• <strong>NeurIPS ML Safety Workshop AI Risk Analysis Award</strong> (2022)</p>
-            <p>• <strong>Vitalik Buterin PhD Fellowship in AI Existential Safety</strong> (2022 finalist)</p>
-            <p>• <strong>UConn School of Engineering Next Gen Scholar GE Graduate Fellowship for Innovation</strong> (2021-2022)</p>
-            <p>• <strong>Member of the Future of Life Institute's AI Safety Community Researchers</strong></p>
-        </div>
-    </section>
-
-    <section id="teaching">
-        <h2>Teaching and Communication</h2>
-        
-        <div class="experience">
-            <p><strong>Graduate Teaching Assistant</strong>, ENGR 1195: AI Literacy, University of Connecticut (Aug 2025 – Dec 2025)<br>
-            Supporting large-scale AI literacy course with 500 students across engineering and other disciplines. Analyzing student engagement data and weekly TA reports to inform educational strategy. Preparing statistical analyses of student responses for assessment and reporting to Provost.</p>
-        </div>
-        
-        <div class="experience">
-            <p><strong>Instructor Support Volunteer</strong>, UConn Center for Excellence in Teaching and Learning (Jan 2025 – May 2025)<br>
-            Designed and taught month-long "AI Safety Literacy: From Awareness to Action" seminar series for UConn faculty and staff. Convened panel discussion "Beneficial, Ethical AI at UConn: a student-led conversation," earning letter of recognition from CETL. Provided consultation on AI integration in educational contexts through drop-in office hours.</p>
-        </div>
-        
-        <div class="experience">
-            <p><strong>Fellowship Facilitator</strong>, Beneficial and Ethical AI at UConn (BEACON) (Jan 2024 – Dec 2024)<br>
-            Facilitated Technical AI Safety Fellowship and AI Policy Fellowship for multiple cohorts, guiding students through structured curricula introducing AI safety research and governance. Mentored undergraduate research project on bias reduction; advised undergraduate fellow who subsequently joined RIET Lab and collaborated on CHAI-24 poster presentation.</p>
-        </div>
-    </section>
-
     <section id="media">
-        <h2>Media and Outreach</h2>
-        <div class="conference">
-            <p>• <strong>The Conversation</strong>: Published article "<a href="https://theconversation.com/getting-ais-working-toward-human-goals-study-shows-how-to-measure-misalignment-236050">Getting AIs working toward human goals – study shows how to measure misalignment</a>" communicating research findings to general audience</p>
-            <p>• <strong>UConn Daily Campus</strong>: Featured in "<a href="https://dailycampus.com/2024/02/15/artificial-intelligence-poses-novel-social-threats-researchers-prepare-for-the-worst/">Artificial Intelligence poses novel social threats, researchers prepare for the worst</a>" discussing AI safety research</p>
-            <p>• <strong>Future of Life Institute</strong>: Presented invited talk "Quantifying Misalignment Between Agents: Towards a Sociotechnical Understanding of Alignment" for AI Existential Safety Community</p>
-            <p>• <strong>UConn Center for Excellence in Teaching and Learning</strong>: Led "mAI dAI" seminar series on AI alignment and malicious misuse for university instructional staff</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out at aidan.kierans [at] uconn.edu or connect with me on <a href="https://www.linkedin.com/in/aidan-kierans/">LinkedIn</a>.</p>
+        <h2>Media</h2>
+        <ul class="highlights">
+            <li><a href="https://theconversation.com/getting-ais-working-toward-human-goals-study-shows-how-to-measure-misalignment-236050">The Conversation</a>: "Getting AIs working toward human goals — study shows how to measure misalignment"</li>
+            <li><a href="https://dailycampus.com/2024/02/15/artificial-intelligence-poses-novel-social-threats-researchers-prepare-for-the-worst/">UConn Daily Campus</a>: "Artificial Intelligence poses novel social threats, researchers prepare for the worst"</li>
+            <li><strong>Future of Life Institute</strong>: Invited talk for AI Existential Safety Community</li>
+            <li><strong>UConn Center for Excellence in Teaching and Learning</strong>: Led "mAI dAI" seminar series on AI alignment and malicious misuse for university instructional staff</li>
+        </ul>
     </section>
 
     <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; color: #666; font-size: 0.9em;">
-        <p>Last updated: January 2026</p>
+        <p>Last updated: February 2026</p>
     </footer>
 </body>
 </html>
